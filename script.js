@@ -1,3 +1,25 @@
+// Back to top button
+const backToTopBtn = document.getElementById('back-to-top');
+window.addEventListener('scroll', () => {
+  if (window.pageYOffset > 300) {
+    backToTopBtn.classList.add('show');
+  } else {
+    backToTopBtn.classList.remove('show');
+  }
+});
+backToTopBtn.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+// Scroll progress bar
+const progressBar = document.getElementById('progress-bar');
+window.addEventListener('scroll', () => {
+  const scrollTop = window.pageYOffset;
+  const docHeight = document.body.scrollHeight - window.innerHeight;
+  const scrollPercent = (scrollTop / docHeight) * 100;
+  progressBar.style.width = scrollPercent + '%';
+});
+
 // Navbar scroll
 const navbar = document.getElementById('navbar');
 window.addEventListener('scroll', () => {
@@ -5,33 +27,16 @@ window.addEventListener('scroll', () => {
   else navbar.classList.remove('scrolled');
 });
 
-// Parallax effect
-window.addEventListener('scroll', () => {
-  const scrolled = window.pageYOffset;
-  const parallaxElements = document.querySelectorAll('.parallax-bg');
-  parallaxElements.forEach(el => {
-    const rate = scrolled * -0.5;
-    el.style.backgroundPositionY = rate + 'px';
-  });
+// Hamburger menu
+const hamburger = document.querySelector('.hamburger');
+const nav = document.querySelector('nav');
+hamburger.addEventListener('click', () => {
+  hamburger.classList.toggle('active');
+  nav.classList.toggle('active');
 });
 
 // Scroll animations
-const observerOptions = {
-  threshold: 0.1,
-  rootMargin: '0px 0px -50px 0px'
-};
-
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if(entry.isIntersecting) {
-      entry.target.classList.add('active');
-    }
-  });
-}, observerOptions);
-
-document.querySelectorAll('.topic-card').forEach(card => {
-  observer.observe(card);
-});
+// Removed observer to force cards visible
 
 // Hover effects for videos
 document.querySelectorAll('iframe').forEach(iframe => {
