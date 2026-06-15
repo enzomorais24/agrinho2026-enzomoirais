@@ -41,4 +41,4 @@ O AgroFuturo apresenta dados reais, mapas interativos e conteúdo educativo para
 
 ## Autor
 
-Criado por [Enzo Morais](https://github.com/enzo-morais)
+Enzo Morais

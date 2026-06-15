@@ -1,4 +1,4 @@
-const backToTopBtn = document.getElementById('back-to-top');
+﻿const backToTopBtn = document.getElementById('back-to-top');
 const progressBar = document.getElementById('progress-bar');
 const navbar = document.getElementById('navbar');
 const hamburger = document.querySelector('.hamburger');
@@ -8,7 +8,6 @@ const topicCards = document.querySelectorAll('.topic-card, .stats-card, .pillar-
 const themeToggle = document.getElementById('theme-toggle');
 const body = document.body;
 
-// ===== LOADING SCREEN =====
 const loadingScreen = document.getElementById('loading-screen');
 const loadingBarFill = document.querySelector('.loading-bar-fill');
 const loadingText = document.querySelector('.loading-text');
@@ -37,7 +36,6 @@ if (loadingScreen && loadingBarFill) {
   }, 120);
 }
 
-// ===== SKELETON REVEAL =====
 function revealSkeletons() {
     const skeletonMap = [
         { gridId: 'stats-grid',   templateId: 'stats-real' },
@@ -52,14 +50,12 @@ function revealSkeletons() {
         if (!grid || !template) return;
 
         setTimeout(() => {
-            // Fade out skeletons
             grid.querySelectorAll('.skeleton-active').forEach(el => {
                 el.style.transition = 'opacity 0.3s ease';
                 el.style.opacity = '0';
             });
 
             setTimeout(() => {
-                // Replace with real content
                 grid.innerHTML = '';
                 const clone = template.content.cloneNode(true);
                 Array.from(clone.children).forEach((child, idx) => {
@@ -68,7 +64,6 @@ function revealSkeletons() {
                     grid.appendChild(child);
                 });
 
-                // Start counters if present
                 grid.querySelectorAll('.counter').forEach(counter => {
                     if (!counter.dataset.animated) {
                         counter.dataset.animated = 'true';
@@ -80,7 +75,6 @@ function revealSkeletons() {
     });
 }
 
-// ===== SCROLL EFFECTS =====
 const updateScrollEffects = () => {
     const scrollTop = window.pageYOffset;
     const docHeight = document.documentElement.scrollHeight - window.innerHeight;
@@ -112,7 +106,6 @@ links.forEach(link => {
     link.addEventListener('click', () => closeMenu());
 });
 
-// ===== ANIMATED COUNTER =====
 function animateCounter(el) {
     const target = parseInt(el.dataset.target, 10);
     const suffix = el.dataset.suffix || '';
@@ -137,7 +130,6 @@ function animateCounter(el) {
     requestAnimationFrame(step);
 }
 
-// ===== INTERSECTION OBSERVER =====
 window.addEventListener('DOMContentLoaded', () => {
     updateScrollEffects();
 
@@ -163,7 +155,6 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Tema
     const savedTheme = localStorage.getItem('theme-mode') || 'light';
     body.classList.add(`${savedTheme}-theme`);
     if (themeToggle) {
@@ -179,7 +170,6 @@ window.addEventListener('DOMContentLoaded', () => {
         themeToggle.querySelector('i').className = nextTheme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
     });
 
-    // ===== MAPA INTERATIVO =====
     const regionData = {
         norte:      { label: 'Norte', info: '1,2 mi estabelecimentos · Açaí, Castanha, Pesca artesanal' },
         nordeste:   { label: 'Nordeste', info: '2,0 mi estabelecimentos · Mandioca, Caju, Caprinos' },
@@ -223,24 +213,20 @@ window.addEventListener('DOMContentLoaded', () => {
     legendItems.forEach(item => {
         item.addEventListener('click', () => {
             const isOpen = item.classList.contains('open');
-            // fecha todos
             legendItems.forEach(l => {
                 l.classList.remove('open');
                 l.classList.remove('active');
             });
-            // abre o clicado
             if (!isOpen) {
                 item.classList.add('open');
                 item.classList.add('active');
                 setActiveRegion(item.dataset.region);
             } else {
-                // se clicou no já aberto, fecha e remove destaque
                 mapRegions.forEach(r => r.classList.remove('active'));
             }
         });
     });
 
-    // ===== PARANÁ ACCORDION =====
     const prItems = document.querySelectorAll('.pr-accordion-item');
     const prRegions = document.querySelectorAll('.pr-region');
 
@@ -272,13 +258,10 @@ window.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Fact cards observer
     document.querySelectorAll('.fact-card').forEach(card => observer.observe(card));
 
-    // Challenge cards observer
     document.querySelectorAll('.challenge-card').forEach(card => observer.observe(card));
 
-    // PR stats counter - animate when visible
     const prStatsBar = document.querySelector('.pr-stats-bar');
     if (prStatsBar) {
         const prObserver = new IntersectionObserver((entries) => {
@@ -315,14 +298,12 @@ window.addEventListener('DOMContentLoaded', () => {
         requestAnimationFrame(step);
     }
 
-    // Sul já começa aberto e destacado
     const sulItem = document.querySelector('.map-legend-item[data-region="sul"]');
     if (sulItem) {
         sulItem.classList.add('open');
         setActiveRegion('sul');
     }
 
-    // ===== QUIZ =====
     initQuiz();
 });
 
@@ -435,7 +416,6 @@ function initQuiz() {
     showQuestion();
 }
 
-// ===== LEAF PARTICLES =====
 function createLeafParticles() {
     const container = document.getElementById('hero-particles');
     if (!container) return;
@@ -453,7 +433,6 @@ function createLeafParticles() {
 }
 createLeafParticles();
 
-// ===== SCROLL INDICATOR =====
 function initScrollIndicator() {
     const indicator = document.getElementById('scroll-indicator');
     if (!indicator) return;
@@ -488,7 +467,6 @@ function initScrollIndicator() {
 }
 initScrollIndicator();
 
-// ===== PAGE TRANSITION =====
 document.querySelectorAll('a[href$=".html"]').forEach(link => {
     link.addEventListener('click', function(e) {
         const href = this.getAttribute('href');
@@ -500,13 +478,11 @@ document.querySelectorAll('a[href$=".html"]').forEach(link => {
     });
 });
 
-// ===== THEME TOGGLE (standalone - works on any page) =====
 (function() {
     const toggle = document.getElementById('theme-toggle');
     const b = document.body;
     if (!toggle) return;
 
-    // Apply saved theme
     const saved = localStorage.getItem('theme-mode') || 'light';
     b.classList.remove('light-theme', 'dark-theme');
     b.classList.add(saved + '-theme');
@@ -524,7 +500,6 @@ document.querySelectorAll('a[href$=".html"]').forEach(link => {
     });
 })();
 
-// ===== SCROLL INVITE =====
 document.querySelector('.scroll-invite')?.addEventListener('click', () => {
     const hero = document.getElementById('hero');
     const next = hero?.nextElementSibling;

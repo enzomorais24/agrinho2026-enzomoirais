@@ -1,5 +1,4 @@
-/* ===== SKELETON LOADING ===== */
-.skeleton-active {
+﻿.skeleton-active {
   pointer-events: none;
   display: flex !important;
   flex-direction: column;
@@ -26,7 +25,6 @@ body.dark-theme .sk {
 .sk-badge  { height: 28px; width: 110px; border-radius: 999px; }
 .sk-icon   { height: 42px; width: 42px; border-radius: 10px; }
 
-/* Transição ao revelar conteúdo real */
 .skeleton-reveal-enter {
   animation: sk-reveal 0.5s ease forwards;
 }
@@ -35,7 +33,6 @@ body.dark-theme .sk {
   to   { opacity: 1; transform: translateY(0); }
 }
 
-/* ===== LOADING SCREEN ===== */
 #loading-screen {
   position: fixed;
   inset: 0;
@@ -100,7 +97,6 @@ body.dark-theme .sk {
   letter-spacing: 0.06em;
 }
 
-/* ===== STATS ===== */
 .stats-title {
   font-size: clamp(1.8rem, 3vw, 2.6rem);
   margin-bottom: 8px;
@@ -126,7 +122,6 @@ body.dark-theme .sk {
   font-style: italic;
 }
 
-/* ===== MAPA ===== */
 .map-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -289,7 +284,6 @@ body.dark-theme .sk {
   color: var(--primary-color);
   font-weight: 700;
 }
-/* Sul destaque */
 .map-legend-item[data-region="sul"] {
   border-color: rgba(130,192,204,0.4);
 }
@@ -297,7 +291,6 @@ body.dark-theme .sk {
   .map-wrapper { grid-template-columns: 1fr; }
 }
 
-/* Reset */
 * {
   margin: 0;
   padding: 0;
@@ -459,7 +452,6 @@ body.loaded {
   transform: translateY(0);
 }
 
-/* Header */
 header {
   position: fixed;
   top: 0;
@@ -594,7 +586,6 @@ nav.active {
 }
 nav.active a { margin: 0; }
 
-/* Hero */
 section[id$='hero'] {
   min-height: 100vh;
   display: flex;
@@ -692,7 +683,6 @@ body.dark-theme .btn-outline {
   border-color: rgba(255,255,255,0.16);
 }
 
-/* Stats */
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -716,7 +706,6 @@ body.dark-theme .btn-outline {
   line-height: 1.7;
 }
 
-/* Section cards */
 .pillars-grid,
 .story-grid,
 .tech-grid {
@@ -821,7 +810,6 @@ body.dark-theme .btn-outline {
   margin: 0;
 }
 
-/* Sections */
 .section {
   padding: 110px 20px 60px;
 }
@@ -1043,7 +1031,6 @@ footer::before { display: none; }
   .hero-content { padding-bottom: 80px; }
 }
 
-/* ===== UM DIA NO CAMPO ===== */
 .timeline-day {
   margin-top: 40px;
   position: relative;
@@ -1109,7 +1096,6 @@ footer::before { display: none; }
   .timeline-icon { width: 32px; height: 32px; font-size: 0.75rem; }
 }
 
-/* ===== SABIA QUE ===== */
 .facts-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -1127,7 +1113,6 @@ footer::before { display: none; }
   opacity: 0;
   transform: translateY(20px);
   transition: opacity 0.6s ease, transform 0.6s ease, border-color var(--transition), box-shadow var(--transition);
-  /* força mesma altura em toda linha */
   align-self: stretch;
 }
 .fact-card.visible {
@@ -1163,7 +1148,6 @@ footer::before { display: none; }
   font-size: 1rem;
 }
 
-/* ===== COMPARATIVO ===== */
 .compare-wrapper {
   display: grid;
   grid-template-columns: 1fr auto 1fr;
@@ -1263,7 +1247,6 @@ footer::before { display: none; }
   .compare-divider span { margin: 0 auto; }
 }
 
-/* ===== PARANÁ ===== */
 .pr-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1393,7 +1376,6 @@ footer::before { display: none; }
   .pr-stats-bar { grid-template-columns: repeat(2, 1fr); }
 }
 
-/* ===== DESAFIOS ===== */
 .challenges-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1458,7 +1440,6 @@ body.dark-theme .challenge-tag { color: #e08080; }
 @media (max-width: 980px) { .challenges-grid { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 600px) { .challenges-grid { grid-template-columns: 1fr; } }
 
-/* ===== QUIZ ===== */
 #quiz-container {
   max-width: 600px;
   margin: 36px auto 0;
@@ -1553,7 +1534,6 @@ body.dark-theme .challenge-tag { color: #e08080; }
   margin: 0 auto;
 }
 
-/* ===== PARTÍCULAS NO HERO ===== */
 .hero-particles {
   position: absolute;
   inset: 0;
@@ -1574,7 +1554,6 @@ body.dark-theme .challenge-tag { color: #e08080; }
   100% { opacity: 0; transform: translateY(100vh) rotate(360deg); }
 }
 
-/* ===== SCROLL INDICATOR ===== */
 .scroll-indicator {
   position: fixed;
   right: 24px;
@@ -1607,7 +1586,6 @@ body.dark-theme .challenge-tag { color: #e08080; }
   .scroll-indicator { display: none; }
 }
 
-/* ===== PAGE TRANSITION ===== */
 .page-transition-out {
   animation: page-out 0.4s ease forwards;
 }
@@ -1615,7 +1593,6 @@ body.dark-theme .challenge-tag { color: #e08080; }
   to { opacity: 0; transform: translateY(-10px); }
 }
 
-/* ===== SCROLL INVITE ===== */
 .scroll-invite {
   position: absolute;
   bottom: 40px;
