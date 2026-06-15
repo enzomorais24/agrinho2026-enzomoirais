@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR" style="background:#071f14">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AgroFuturo - Sobre</title>
+<link rel="icon" href="favcoon.png">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+  .sobre-section { text-align: center; }
+  .sobre-content { max-width: 700px; margin: 0 auto; text-align: left; }
+  .sobre-content p { color: var(--muted-color); line-height: 1.85; margin-bottom: 16px; font-size: 0.95rem; }
+  .sobre-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 14px; }
+  .sobre-list li { padding: 18px 20px; border: 1px solid var(--border-color); border-radius: 16px; background: var(--surface-strong); text-align: left; }
+  .sobre-list li strong { display: block; color: var(--text-color); font-size: 0.95rem; margin-bottom: 4px; }
+  .sobre-list li p { font-size: 0.84rem; color: var(--muted-color); margin: 0; line-height: 1.6; }
+  .tech-badges { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 16px; max-width: 600px; margin: 0 auto; }
+  .tech-badge { padding: 24px 16px; border: 1px solid var(--border-color); border-radius: 18px; background: var(--surface-strong); text-align: center; }
+  .tech-badge i { font-size: 2.2rem; color: var(--primary-color); margin-bottom: 10px; display: block; }
+  .tech-badge span { font-size: 0.85rem; font-weight: 600; color: var(--text-color); }
+  .credit-line { font-size: 0.85rem; color: var(--muted-color); margin-bottom: 8px; }
+</style>
+</head>
+<body class="loaded">
+
+<script>
+(function() {
+  var theme = localStorage.getItem('theme-mode') || 'light';
+  document.body.classList.add(theme + '-theme');
+})();
+</script>
+
+<div id="progress-bar"></div>
+<header id="navbar">
+  <div class="logo"><a href="index.html">AgroFuturo</a></div>
+  <nav>
+    <a href="index.html">Voltar ao site</a>
+  </nav>
+  <button id="theme-toggle" class="theme-toggle" aria-label="Mudar tema">
+    <i class="fas fa-moon"></i>
+  </button>
+  <div class="hamburger">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="section sobre-section" style="padding-top:140px">
+    <div class="section-overlay">
+      <h2>Sobre o AgroFuturo</h2>
+      <p class="lead">Um projeto que busca mostrar a realidade da agricultura familiar brasileira — com foco nos pequenos produtores que sustentam a economia das cidades pequenas.</p>
+    </div>
+  </section>
+
+  <!-- O PROJETO -->
+  <section class="section section-alt sobre-section">
+    <div class="section-overlay">
+      <h2>O Projeto</h2>
+      <div class="sobre-content">
+        <p>O AgroFuturo é um site informativo e interativo desenvolvido para valorizar a agricultura familiar no Brasil, com destaque para o estado do Paraná. O conteúdo foi pensado para mostrar como os pequenos produtores influenciam diretamente a economia, o emprego e a qualidade de vida nas cidades pequenas.</p>
+        <p>Através de dados reais, mapas interativos, um quiz educativo e visualizações comparativas, o projeto apresenta o impacto invisível — mas essencial — de quem planta, colhe e alimenta o Brasil todos os dias.</p>
+        <p>O site foi construído com HTML, CSS e JavaScript puros, sem frameworks, com foco em performance, acessibilidade e design moderno.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FONTES -->
+  <section class="section sobre-section">
+    <div class="section-overlay">
+      <h2>Fontes e Referências</h2>
+      <div class="sobre-content">
+        <ul class="sobre-list">
+          <li>
+            <strong>IBGE — Censo Agropecuário 2017</strong>
+            <p>Dados sobre número de estabelecimentos, área, produção e perfil dos agricultores familiares.</p>
+          </li>
+          <li>
+            <strong>MDA — Ministério do Desenvolvimento Agrário</strong>
+            <p>Informações sobre PRONAF, DAP, PAA e políticas públicas para agricultura familiar.</p>
+          </li>
+          <li>
+            <strong>EMATER-PR / IDR-Paraná</strong>
+            <p>Dados regionais do Paraná, assistência técnica e programas estaduais para produtores familiares.</p>
+          </li>
+          <li>
+            <strong>CONAB — Companhia Nacional de Abastecimento</strong>
+            <p>Dados de safra, preços, logística e armazenamento da produção familiar.</p>
+          </li>
+          <li>
+            <strong>FAO — Organização das Nações Unidas para Alimentação</strong>
+            <p>Relatórios sobre o papel da agricultura familiar na segurança alimentar mundial.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECNOLOGIAS -->
+  <section class="section section-alt sobre-section">
+    <div class="section-overlay">
+      <h2>Tecnologias Utilizadas</h2>
+      <div class="tech-badges">
+        <div class="tech-badge">
+          <i class="fab fa-html5"></i>
+          <span>HTML5</span>
+        </div>
+        <div class="tech-badge">
+          <i class="fab fa-css3-alt"></i>
+          <span>CSS3</span>
+        </div>
+        <div class="tech-badge">
+          <i class="fab fa-js-square"></i>
+          <span>JavaScript</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CRÉDITOS -->
+  <section class="section sobre-section">
+    <div class="section-overlay">
+      <h2>Créditos</h2>
+      <div class="sobre-content" style="text-align:center">
+        <p>Projeto desenvolvido para fins educativos. Todo o conteúdo foi produzido com base em dados públicos e pesquisas oficiais.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2026 AgroFuturo. Todos os direitos reservados.</p>
+  <p style="margin-top:8px"><a href="https://github.com/enzo-morais" target="_blank" rel="noopener" style="color:var(--primary-color);text-decoration:none;font-weight:600">Criado por Enzo Morais</a></p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

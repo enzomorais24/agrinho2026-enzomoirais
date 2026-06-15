@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="pt-BR" style="background:#071f14">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AgroFuturo - Home</title>
+<link rel="icon" href="favcoon.png">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+<!-- Loading Screen -->
+<div id="loading-screen">
+  <div class="loading-content">
+    <div class="loading-logo">
+      <i class="fas fa-seedling"></i>
+      <span>AgroFuturo</span>
+    </div>
+    <div class="loading-bar"><div class="loading-bar-fill"></div></div>
+    <p class="loading-text">Carregando...</p>
+  </div>
+</div>
+
+<div id="progress-bar"></div>
+<header id="navbar">
+  <div class="logo"><a href="#hero">AgroFuturo</a></div>
+  <nav>
+    <a href="#dia-no-campo">O Campo</a>
+    <a href="#sabia-que">Dados</a>
+    <a href="#comparativo">Impacto</a>
+    <a href="#desafios">Desafios</a>
+    <a href="#parana">Paraná</a>
+    <a href="#quiz">Quiz</a>
+    <a href="sobre.html">Sobre</a>
+  </nav>
+  <button id="theme-toggle" class="theme-toggle" aria-label="Mudar tema">
+    <i class="fas fa-moon"></i>
+  </button>
+  <div class="hamburger">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h1 class="hero-glow">Pequenos produtores que alimentam a cidade e cuidam da terra</h1>
+        <p>Práticas simples, histórias locais e o impacto real na economia das cidades pequenas.</p>
+      </div>
+    </div>
+    <div class="scroll-invite">
+      <div class="scroll-mouse">
+        <div class="scroll-wheel"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- UM DIA NO CAMPO -->
+  <section id="dia-no-campo" class="section section-alt fade-section">
+    <div class="section-overlay">
+      <h2>Um Dia no Campo</h2>
+      <p class="lead">A rotina de quem acorda antes do sol para alimentar o Brasil começa muito antes de chegar ao mercado.</p>
+      <div class="timeline-day">
+        <div class="timeline-item">
+          <div class="timeline-time">04:30</div>
+          <div class="timeline-icon"><i class="fas fa-moon"></i></div>
+          <div class="timeline-content">
+            <h4>Antes do amanhecer</h4>
+            <p>O produtor acorda, verifica o tempo e já planeja o dia. No inverno paranaense, temperaturas de 5°C não param o trabalho. O café é feito no fogão a lenha enquanto os animais recebem a primeira ração do dia.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-time">06:00</div>
+          <div class="timeline-icon"><i class="fas fa-tractor"></i></div>
+          <div class="timeline-content">
+            <h4>Início da lida</h4>
+            <p>Colheita, ordenha ou plantio — depende da época. Na soja, é hora de checar a umidade do grão. Na horta, colher o que foi pedido pela cooperativa ou pela feira do fim de semana. Cada produto tem seu tempo e não espera.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-time">10:00</div>
+          <div class="timeline-icon"><i class="fas fa-leaf"></i></div>
+          <div class="timeline-content">
+            <h4>Manutenção e cuidado</h4>
+            <p>Aplicação de calcário, poda, irrigação ou controle de pragas com produtos orgânicos. Parte do trabalho é invisível — preparar o solo de hoje é garantir a colheita do próximo ano.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-time">12:00</div>
+          <div class="timeline-icon"><i class="fas fa-utensils"></i></div>
+          <div class="timeline-content">
+            <h4>Almoço em família</h4>
+            <p>Na propriedade familiar, o almoço reúne quem trabalha. É o momento de dividir tarefas da tarde, resolver problemas e tomar decisões sobre o que plantar na próxima safra. O feijão do prato muitas vezes veio da própria horta.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-time">14:00</div>
+          <div class="timeline-icon"><i class="fas fa-truck"></i></div>
+          <div class="timeline-content">
+            <h4>Entrega e venda</h4>
+            <p>Carregar o caminhão com o que foi colhido e levar à cooperativa, ao CEASA ou direto ao mercado local. Em alguns municípios paranaenses, o produtor entrega pessoalmente na merenda escolar pelo PAA — Programa de Aquisição de Alimentos.</p>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-time">17:30</div>
+          <div class="timeline-icon"><i class="fas fa-sun"></i></div>
+          <div class="timeline-content">
+            <h4>Fim do dia — quase</h4>
+            <p>Segunda ordenha do dia, fechar o aviário, checar equipamentos. Depois, registrar o que foi produzido e vendido. Muitos produtores hoje usam apps para controle financeiro — a tecnologia chegou no campo, mas a dedicação sempre foi a mesma.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats-section section fade-section">
+    <div class="section-overlay">
+      <h2 class="stats-title">Agricultura Familiar em Números</h2>
+      <p class="lead" style="margin-bottom:36px">Dados do IBGE que mostram a força do campo brasileiro</p>
+      <div class="stats-grid" id="stats-grid">
+        <div class="stats-card skeleton-active">
+          <div class="sk sk-title"></div>
+          <div class="sk sk-line" style="width:80%"></div>
+          <div class="sk sk-line" style="width:95%"></div>
+          <div class="sk sk-line" style="width:70%"></div>
+        </div>
+        <div class="stats-card skeleton-active">
+          <div class="sk sk-title"></div>
+          <div class="sk sk-line" style="width:75%"></div>
+          <div class="sk sk-line" style="width:90%"></div>
+          <div class="sk sk-line" style="width:65%"></div>
+        </div>
+        <div class="stats-card skeleton-active">
+          <div class="sk sk-title"></div>
+          <div class="sk sk-line" style="width:85%"></div>
+          <div class="sk sk-line" style="width:95%"></div>
+          <div class="sk sk-line" style="width:60%"></div>
+        </div>
+        <div class="stats-card skeleton-active">
+          <div class="sk sk-title"></div>
+          <div class="sk sk-line" style="width:80%"></div>
+          <div class="sk sk-line" style="width:88%"></div>
+          <div class="sk sk-line" style="width:72%"></div>
+        </div>
+      </div>
+      <template id="stats-real">
+        <div class="stats-card">
+          <strong><span class="counter" data-target="4367902" data-suffix="">0</span></strong>
+          <span class="stats-label">estabelecimentos de agricultura familiar no Brasil</span>
+          <p>77% de tudo que chega à mesa dos brasileiros vem desses produtores.</p>
+        </div>
+        <div class="stats-card">
+          <strong><span class="counter" data-target="67" data-suffix="%">0%</span></strong>
+          <span class="stats-label">dos trabalhadores rurais</span>
+          <p>A agricultura familiar emprega mais de 10 milhões de pessoas no campo.</p>
+        </div>
+        <div class="stats-card">
+          <strong><span class="counter" data-target="107" data-suffix=" bi">0 bi</span></strong>
+          <span class="stats-label">reais de valor bruto de produção</span>
+          <p>Mesmo ocupando 23% das terras, gera enorme riqueza para o país.</p>
+        </div>
+        <div class="stats-card">
+          <strong><span class="counter" data-target="77" data-suffix="%">0%</span></strong>
+          <span class="stats-label">dos alimentos da mesa brasileira</span>
+          <p>Feijão, mandioca, leite, hortaliças: o pequeno produtor alimenta o Brasil.</p>
+        </div>
+      </template>
+      <p class="stats-source">Fonte: Censo Agropecuário 2017 — IBGE</p>
+    </div>
+  </section>
+
+  <!-- SABIA QUE -->
+  <section id="sabia-que" class="section section-alt fade-section">
+    <div class="section-overlay">
+      <h2>Sabia que?</h2>
+      <p class="lead">Fatos que mostram o tamanho real da agricultura familiar no Brasil.</p>
+      <div class="facts-grid">
+        <div class="fact-card">
+          <span class="fact-icon"><i class="fas fa-wheat-awn"></i></span>
+          <p>O Brasil tem <strong>4,3 milhões</strong> de agricultores familiares — mais do que a população inteira da Nova Zelândia.</p>
+        </div>
+        <div class="fact-card">
+          <span class="fact-icon"><i class="fas fa-bowl-food"></i></span>
+          <p><strong>87%</strong> da mandioca consumida no Brasil vem de pequenos produtores. Sem eles, não tem farinha, não tem beiju, não tem tapioca.</p>
+        </div>
+        <div class="fact-card">
+          <span class="fact-icon"><i class="fas fa-cow"></i></span>
+          <p><strong>58%</strong> do leite brasileiro é produzido em pequenas propriedades. A maioria das famílias tem menos de 20 vacas.</p>
+        </div>
+        <div class="fact-card">
+          <span class="fact-icon"><i class="fas fa-city"></i></span>
+          <p>Em cidades com menos de 20 mil habitantes, o agro familiar representa em média <strong>45% do PIB local</strong> — mais do que indústria e comércio juntos.</p>
+        </div>
+        <div class="fact-card">
+          <span class="fact-icon"><i class="fas fa-handshake"></i></span>
+          <p>Cada real investido em agricultura familiar gera <strong>R$ 3,48</strong> na economia local — o maior multiplicador entre todos os setores do campo.</p>
+        </div>
+        <div class="fact-card">
+          <span class="fact-icon"><i class="fas fa-seedling"></i></span>
+          <p>Pequenos produtores ocupam apenas <strong>23% das terras</strong> agrícolas, mas geram <strong>38% do valor bruto</strong> da produção agropecuária nacional.</p>
+        </div>
+        <div class="fact-card">
+          <span class="fact-icon"><i class="fas fa-school"></i></span>
+          <p>O PNAE (merenda escolar) compra obrigatoriamente <strong>30%</strong> dos alimentos de agricultores familiares locais. Isso financia desde famílias até escolas e feiras municipais.</p>
+        </div>
+        <div class="fact-card">
+          <span class="fact-icon"><i class="fas fa-tractor"></i></span>
+          <p>No Paraná, existem mais de <strong>320 mil</strong> estabelecimentos de agricultura familiar — mais do que em qualquer outro estado do Sul.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EQUILÍBRIO -->
+  <section id="equilibrio" class="section fade-section">
+    <div class="section-overlay">
+      <h2>O Equilíbrio</h2>
+      <p class="lead">Produção e preservação caminham juntas quando a agricultura é pensada para o hoje e para o amanhã.</p>
+      <div class="pillars-grid" id="pillars-grid">
+        <div class="pillar-card skeleton-active" style="min-height:280px">
+          <div class="sk sk-badge"></div>
+          <div class="sk sk-heading"></div>
+          <div class="sk sk-line"></div>
+          <div class="sk sk-line" style="width:85%"></div>
+          <div class="sk sk-line" style="width:70%"></div>
+          <div class="sk sk-line" style="width:90%"></div>
+        </div>
+        <div class="pillar-card skeleton-active" style="min-height:280px">
+          <div class="sk sk-badge"></div>
+          <div class="sk sk-heading"></div>
+          <div class="sk sk-line"></div>
+          <div class="sk sk-line" style="width:80%"></div>
+          <div class="sk sk-line" style="width:65%"></div>
+          <div class="sk sk-line" style="width:88%"></div>
+        </div>
+      </div>
+      <template id="pillars-real">
+        <article class="pillar-card">
+          <span class="pillar-tag">Agro Forte</span>
+          <h3>Trabalho local e culturas do dia a dia</h3>
+          <p>Pequenos produtores cuidam de hortaliças, grãos e leite com atenção. O resultado é alimento na mesa e renda para famílias.</p>
+          <ul>
+            <li>Venda em feiras e mercados da região</li>
+            <li>Troca de experiência entre vizinhos</li>
+            <li>Escolha do que plantar segundo a demanda local</li>
+          </ul>
+        </article>
+        <article class="pillar-card">
+          <span class="pillar-tag">Futuro Sustentável</span>
+          <h3>Solo saudável e água preservada</h3>
+          <p>Quem planta sabe que o cuidado hoje garante colheita amanhã. Isso inclui usar menos químicos e proteger nascentes.</p>
+          <ul>
+            <li>Rotação de culturas para não esgotar o solo</li>
+            <li>Adubação orgânica com esterco e restos de planta</li>
+            <li>Manter a mata ciliar e proteger águas da região</li>
+          </ul>
+        </article>
+      </template>
+    </div>
+  </section>
+
+  <!-- COMPARATIVO VISUAL -->
+  <section id="comparativo" class="section section-alt fade-section">
+    <div class="section-overlay">
+      <h2>Cidade com e sem Agro Familiar</h2>
+      <p class="lead">O impacto real na economia de uma cidade pequena quando os produtores locais prosperam ou somem.</p>
+      <div class="compare-wrapper">
+        <div class="compare-col compare-col--with">
+          <div class="compare-header">
+            <i class="fas fa-check-circle"></i>
+            <h3>Com agro familiar forte</h3>
+          </div>
+          <ul class="compare-list">
+            <li><i class="fas fa-arrow-up"></i> Feiras semanais movimentam o centro da cidade</li>
+            <li><i class="fas fa-arrow-up"></i> Mercearias e mercadinhos com produtos locais frescos</li>
+            <li><i class="fas fa-arrow-up"></i> Transporte e logística geram empregos no município</li>
+            <li><i class="fas fa-arrow-up"></i> Escolas recebem alimentos frescos pelo PNAE</li>
+            <li><i class="fas fa-arrow-up"></i> Cooperativas locais financiam saúde e educação</li>
+            <li><i class="fas fa-arrow-up"></i> Jovens têm razão para ficar — e renda para isso</li>
+            <li><i class="fas fa-arrow-up"></i> Arrecadação municipal cresce com o ICMS do agro</li>
+            <li><i class="fas fa-arrow-up"></i> IDH mais alto, menos desigualdade, mais permanência</li>
+          </ul>
+          <div class="compare-stat">
+            <strong>+45%</strong>
+            <span>do PIB local vem do campo</span>
+          </div>
+        </div>
+        <div class="compare-divider">
+          <span>vs</span>
+        </div>
+        <div class="compare-col compare-col--without">
+          <div class="compare-header">
+            <i class="fas fa-times-circle"></i>
+            <h3>Sem agro familiar local</h3>
+          </div>
+          <ul class="compare-list">
+            <li><i class="fas fa-arrow-down"></i> Mercados dependem de distribuidores de fora</li>
+            <li><i class="fas fa-arrow-down"></i> Preços sobem, qualidade cai, frescor desaparece</li>
+            <li><i class="fas fa-arrow-down"></i> Empregos no transporte e embalagem somem</li>
+            <li><i class="fas fa-arrow-down"></i> Merenda escolar vira produto industrializado</li>
+            <li><i class="fas fa-arrow-down"></i> Cooperativas fecham, crédito some da cidade</li>
+            <li><i class="fas fa-arrow-down"></i> Êxodo rural: jovens vão para a cidade grande</li>
+            <li><i class="fas fa-arrow-down"></i> Arrecadação cai, menos investimento público</li>
+            <li><i class="fas fa-arrow-down"></i> Centro da cidade esvazia, comércio encolhe</li>
+          </ul>
+          <div class="compare-stat compare-stat--neg">
+            <strong>-30%</strong>
+            <span>na arrecadação municipal</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- DESAFIOS -->
+  <section id="desafios" class="section fade-section">
+    <div class="section-overlay">
+      <h2>Os Desafios do Campo</h2>
+      <p class="lead">Produzir comida para o Brasil não é fácil. Conheça os obstáculos que o pequeno produtor enfrenta todos os dias.</p>
+      <div class="challenges-grid">
+        <div class="challenge-card">
+          <div class="challenge-icon"><i class="fas fa-cloud-showers-heavy"></i></div>
+          <h3>Clima imprevisível</h3>
+          <p>Secas prolongadas, geadas fora de época e chuvas de granizo destroem safras inteiras. O pequeno produtor não tem seguro agrícola — quando perde, perde tudo.</p>
+          <div class="challenge-impact">
+            <span class="challenge-tag">Perda média: 25% da safra/ano</span>
+          </div>
+        </div>
+        <div class="challenge-card">
+          <div class="challenge-icon"><i class="fas fa-piggy-bank"></i></div>
+          <h3>Crédito difícil</h3>
+          <p>O PRONAF existe, mas a burocracia para acessar é enorme. Muitos produtores desistem do financiamento e ficam sem capital para investir em melhorias ou safras.</p>
+          <div class="challenge-impact">
+            <span class="challenge-tag">40% nunca acessaram crédito rural</span>
+          </div>
+        </div>
+        <div class="challenge-card">
+          <div class="challenge-icon"><i class="fas fa-truck-moving"></i></div>
+          <h3>Logística precária</h3>
+          <p>Estradas de terra, pontes caídas e falta de transporte refrigerado fazem com que alimentos estraguem antes de chegar ao mercado. Quem mora longe perde mais.</p>
+          <div class="challenge-impact">
+            <span class="challenge-tag">30% da produção se perde no trajeto</span>
+          </div>
+        </div>
+        <div class="challenge-card">
+          <div class="challenge-icon"><i class="fas fa-scale-unbalanced"></i></div>
+          <h3>Preço injusto</h3>
+          <p>Intermediários compram por centavos e revendem por reais. O produtor fica com a menor parte do lucro, mesmo sendo quem planta, colhe e cuida.</p>
+          <div class="challenge-impact">
+            <span class="challenge-tag">Produtor recebe apenas 20% do preço final</span>
+          </div>
+        </div>
+        <div class="challenge-card">
+          <div class="challenge-icon"><i class="fas fa-user-graduate"></i></div>
+          <h3>Êxodo dos jovens</h3>
+          <p>Sem perspectiva de renda e acesso a tecnologia, os filhos dos produtores migram para a cidade. A mão de obra envelhece e muitas propriedades ficam sem sucessor.</p>
+          <div class="challenge-impact">
+            <span class="challenge-tag">70% dos jovens rurais querem sair do campo</span>
+          </div>
+        </div>
+        <div class="challenge-card">
+          <div class="challenge-icon"><i class="fas fa-file-contract"></i></div>
+          <h3>Burocracia e regularização</h3>
+          <p>Licenças ambientais, CAR, DAP — a quantidade de documentos é enorme. Muitos produtores ficam na informalidade por não conseguir navegar o sistema.</p>
+          <div class="challenge-impact">
+            <span class="challenge-tag">50% dos produtores operam sem DAP atualizada</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARANÁ -->
+  <section id="parana" class="section section-alt fade-section">
+    <div class="section-overlay">
+      <h2>Paraná: O Gigante do Agro Familiar</h2>
+      <p class="lead">Com mais de 320 mil estabelecimentos familiares, o Paraná é o estado que melhor une produtividade, cooperativismo e qualidade de vida no campo.</p>
+      <div class="pr-grid">
+        <div class="pr-map-area">
+          <svg viewBox="0 0 400 320" class="pr-svg">
+            <ellipse cx="95" cy="150" rx="80" ry="70" class="pr-region" data-region="pr-oeste"
+              fill="rgba(45,106,79,0.25)" stroke="var(--primary-color)" stroke-width="2"/>
+            <text x="95" y="145" text-anchor="middle" class="pr-label">Oeste</text>
+            <text x="95" y="165" text-anchor="middle" class="pr-sub">Soja · Suínos · Aves</text>
+            <ellipse cx="240" cy="90" rx="100" ry="65" class="pr-region" data-region="pr-norte"
+              fill="rgba(212,163,115,0.22)" stroke="var(--accent-color)" stroke-width="2"/>
+            <text x="240" y="85" text-anchor="middle" class="pr-label">Norte</text>
+            <text x="240" y="105" text-anchor="middle" class="pr-sub">Café · Cana · Laranja</text>
+            <ellipse cx="210" cy="225" rx="95" ry="62" class="pr-region" data-region="pr-centrosul"
+              fill="rgba(130,192,204,0.22)" stroke="var(--secondary-color)" stroke-width="2"/>
+            <text x="210" y="220" text-anchor="middle" class="pr-label">Centro-Sul</text>
+            <text x="210" y="240" text-anchor="middle" class="pr-sub">Feijão · Milho · Leite</text>
+            <ellipse cx="340" cy="200" rx="55" ry="50" class="pr-region" data-region="pr-metro"
+              fill="rgba(45,106,79,0.18)" stroke="var(--primary-color)" stroke-width="2"/>
+            <text x="340" y="195" text-anchor="middle" class="pr-label">RMC</text>
+            <text x="340" y="215" text-anchor="middle" class="pr-sub">Hortifruti · Orgânicos</text>
+          </svg>
+        </div>
+        <div class="pr-details">
+          <div class="pr-accordion-item open" data-pr="pr-oeste">
+            <div class="pr-accordion-header">
+              <span class="legend-dot" style="background:var(--primary-color)"></span>
+              <strong>Oeste do Paraná</strong>
+              <i class="fas fa-chevron-down legend-arrow"></i>
+            </div>
+            <div class="pr-accordion-body">
+              <p>A região mais produtiva do estado. Municípios como Cascavel, Toledo e Marechal Cândido Rondon têm no agro familiar a base da economia.</p>
+              <ul>
+                <li>Toledo: capital da agroindústria familiar — 1 em cada 2 empregos vem do campo</li>
+                <li>C.Vale: cooperativa com 18 mil associados, fatura R$ 7 bi/ano</li>
+                <li>Pequenas propriedades de 20 a 50 ha dominam a paisagem</li>
+              </ul>
+            </div>
+          </div>
+          <div class="pr-accordion-item" data-pr="pr-norte">
+            <div class="pr-accordion-header">
+              <span class="legend-dot" style="background:var(--accent-color)"></span>
+              <strong>Norte do Paraná</strong>
+              <i class="fas fa-chevron-down legend-arrow"></i>
+            </div>
+            <div class="pr-accordion-body">
+              <p>Berço do café paranaense. Londrina e Maringá são os polos, mas são os pequenos municípios que guardam a tradição cafeeira.</p>
+              <ul>
+                <li>Paraná é o 4º maior produtor de café do Brasil</li>
+                <li>Cana-de-açúcar familiar abastece usinas de pequeno porte</li>
+                <li>IDR-Paraná apoia pesquisa adaptada ao pequeno produtor</li>
+              </ul>
+            </div>
+          </div>
+          <div class="pr-accordion-item" data-pr="pr-centrosul">
+            <div class="pr-accordion-header">
+              <span class="legend-dot" style="background:var(--secondary-color)"></span>
+              <strong>Centro-Sul do Paraná</strong>
+              <i class="fas fa-chevron-down legend-arrow"></i>
+            </div>
+            <div class="pr-accordion-body">
+              <p>Guarapuava, Pato Branco e Francisco Beltrão são referências em produção leiteira familiar. O feijão da região é exportado para o mundo.</p>
+              <ul>
+                <li>Francisco Beltrão: economia 70% sustentada pelo agro familiar</li>
+                <li>Bacia leiteira do Sudoeste entre as mais produtivas do Brasil</li>
+                <li>Erva-mate nativa cultivada por famílias há mais de 100 anos</li>
+              </ul>
+            </div>
+          </div>
+          <div class="pr-accordion-item" data-pr="pr-metro">
+            <div class="pr-accordion-header">
+              <span class="legend-dot" style="background:var(--primary-color)"></span>
+              <strong>Região Metropolitana de Curitiba</strong>
+              <i class="fas fa-chevron-down legend-arrow"></i>
+            </div>
+            <div class="pr-accordion-body">
+              <p>O cinturão verde que alimenta Curitiba. Colombo, Contenda e Araucária abastecem a capital com verduras e orgânicos frescos diariamente.</p>
+              <ul>
+                <li>Feiras do produtor em Curitiba movimentam R$ 200 mi/ano</li>
+                <li>Certificação orgânica cresce 25% ao ano na RMC</li>
+                <li>Colombo: maior produtor de alho do Sul</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="pr-stats-bar">
+        <div class="pr-stat"><strong>320 mil</strong><span>estabelecimentos familiares</span></div>
+        <div class="pr-stat"><strong>#1</strong><span>maior prod. de soja familiar do Sul</span></div>
+        <div class="pr-stat"><strong>R$ 28 bi</strong><span>gerados pelo agro familiar/ano</span></div>
+        <div class="pr-stat"><strong>68%</strong><span>dos municípios dependem do campo</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TECNOLOGIA -->
+  <section id="tecnologia" class="section fade-section">
+    <div class="section-overlay">
+      <h2>Tecnologia e Inovação Acessível</h2>
+      <p class="lead">Soluções simples que ajudam pequenos produtores a produzir mais, gastar menos e cuidar melhor da natureza.</p>
+      <div class="tech-grid" id="tech-grid">
+        <div class="feature-card skeleton-active" style="min-height:200px">
+          <div class="sk sk-icon"></div>
+          <div class="sk sk-heading"></div>
+          <div class="sk sk-line"></div>
+          <div class="sk sk-line" style="width:80%"></div>
+        </div>
+        <div class="feature-card skeleton-active" style="min-height:200px">
+          <div class="sk sk-icon"></div>
+          <div class="sk sk-heading"></div>
+          <div class="sk sk-line"></div>
+          <div class="sk sk-line" style="width:75%"></div>
+        </div>
+        <div class="feature-card skeleton-active" style="min-height:200px">
+          <div class="sk sk-icon"></div>
+          <div class="sk sk-heading"></div>
+          <div class="sk sk-line"></div>
+          <div class="sk sk-line" style="width:85%"></div>
+        </div>
+      </div>
+      <template id="tech-real">
+        <article class="feature-card">
+          <i class="fas fa-cloud-sun fa-2x"></i>
+          <h3>Apps de previsão</h3>
+          <p>Usar um app simples para saber se vai chover ajuda a decidir quando regar e quando colher.</p>
+        </article>
+        <article class="feature-card">
+          <i class="fas fa-water fa-2x"></i>
+          <h3>Irrigação prática</h3>
+          <p>Gotejamento e água de chuva ajudam a economizar e a não desperdiçar o que é precioso.</p>
+        </article>
+        <article class="feature-card">
+          <i class="fas fa-bolt fa-2x"></i>
+          <h3>Inovação no dia a dia</h3>
+          <p>Ferramentas acessíveis, como medições simples e troca de conhecimento, trazem mais segurança para o produtor.</p>
+        </article>
+      </template>
+    </div>
+  </section>
+
+  <!-- MAPA -->
+  <section id="mapa" class="section section-alt fade-section">
+    <div class="section-overlay">
+      <h2>Regiões Produtoras do Brasil</h2>
+      <p class="lead">Explore as principais regiões de agricultura familiar e o que cada uma produz.</p>
+      <div class="map-wrapper">
+        <div class="map-container">
+          <svg id="brazil-map" viewBox="0 0 600 580" xmlns="http://www.w3.org/2000/svg">
+            <ellipse cx="230" cy="130" rx="155" ry="100" class="map-region" data-region="norte"
+              fill="rgba(45,106,79,0.18)" stroke="var(--primary-color)" stroke-width="2"/>
+            <text x="230" y="125" text-anchor="middle" class="map-region-label">Norte</text>
+            <text x="230" y="145" text-anchor="middle" class="map-region-sub">Açaí · Castanha · Pesca</text>
+            <ellipse cx="420" cy="185" rx="120" ry="90" class="map-region" data-region="nordeste"
+              fill="rgba(212,163,115,0.22)" stroke="var(--accent-color)" stroke-width="2"/>
+            <text x="420" y="180" text-anchor="middle" class="map-region-label">Nordeste</text>
+            <text x="420" y="200" text-anchor="middle" class="map-region-sub">Caju · Mandioca · Caprinos</text>
+            <ellipse cx="270" cy="300" rx="120" ry="80" class="map-region" data-region="centroeste"
+              fill="rgba(130,192,204,0.22)" stroke="var(--secondary-color)" stroke-width="2"/>
+            <text x="270" y="295" text-anchor="middle" class="map-region-label">Centro-Oeste</text>
+            <text x="270" y="315" text-anchor="middle" class="map-region-sub">Soja · Milho · Gado</text>
+            <ellipse cx="410" cy="360" rx="110" ry="75" class="map-region" data-region="sudeste"
+              fill="rgba(45,106,79,0.18)" stroke="var(--primary-color)" stroke-width="2"/>
+            <text x="410" y="355" text-anchor="middle" class="map-region-label">Sudeste</text>
+            <text x="410" y="375" text-anchor="middle" class="map-region-sub">Café · Cana · Laranja</text>
+            <ellipse cx="310" cy="460" rx="100" ry="70" class="map-region" data-region="sul"
+              fill="rgba(130,192,204,0.22)" stroke="var(--secondary-color)" stroke-width="2"/>
+            <text x="310" y="455" text-anchor="middle" class="map-region-label">Sul</text>
+            <text x="310" y="475" text-anchor="middle" class="map-region-sub">Soja · Uva · Suínos</text>
+          </svg>
+          <div id="map-tooltip" class="map-tooltip"></div>
+        </div>
+        <div class="map-legend">
+          <div class="map-legend-item" data-region="norte">
+            <div class="map-legend-header">
+              <span class="legend-dot" style="background:var(--primary-color)"></span>
+              <strong>Norte</strong>
+              <i class="fas fa-chevron-down legend-arrow"></i>
+            </div>
+            <p class="legend-summary">1,2 mi de estabelecimentos · Açaí, Castanha, Pesca</p>
+            <div class="legend-detail">
+              <p>O pequeno produtor é o eixo da economia local. Feiras movimentam o comércio e sustentam redes de transporte e venda.</p>
+              <ul>
+                <li>Feiras semanais respondem por até 60% do abastecimento alimentar local</li>
+                <li>Cada família produtora gera em média 3 empregos indiretos</li>
+              </ul>
+            </div>
+          </div>
+          <div class="map-legend-item" data-region="nordeste">
+            <div class="map-legend-header">
+              <span class="legend-dot" style="background:var(--accent-color)"></span>
+              <strong>Nordeste</strong>
+              <i class="fas fa-chevron-down legend-arrow"></i>
+            </div>
+            <p class="legend-summary">2,0 mi de estabelecimentos · Mandioca, Caju, Caprinos</p>
+            <div class="legend-detail">
+              <p>Maior concentração de agricultores familiares do país. O agro familiar responde por mais da metade do PIB local.</p>
+              <ul>
+                <li>70% dos municípios têm o agro familiar como principal atividade</li>
+                <li>Feiras livres movimentam R$ 4 bi/ano em trocas locais</li>
+              </ul>
+            </div>
+          </div>
+          <div class="map-legend-item" data-region="centroeste">
+            <div class="map-legend-header">
+              <span class="legend-dot" style="background:var(--secondary-color)"></span>
+              <strong>Centro-Oeste</strong>
+              <i class="fas fa-chevron-down legend-arrow"></i>
+            </div>
+            <p class="legend-summary">300 mil estabelecimentos · Soja, Milho, Pecuária</p>
+            <div class="legend-detail">
+              <p>Pequenos produtores abastecem mercados municipais com hortaliças, leite e frango caipira ao lado do agronegócio.</p>
+              <ul>
+                <li>40% dos mercados municipais goianos abastecidos por pequenos produtores</li>
+                <li>Programas de compra pública fortalecem a economia local</li>
+              </ul>
+            </div>
+          </div>
+          <div class="map-legend-item" data-region="sudeste">
+            <div class="map-legend-header">
+              <span class="legend-dot" style="background:var(--primary-color)"></span>
+              <strong>Sudeste</strong>
+              <i class="fas fa-chevron-down legend-arrow"></i>
+            </div>
+            <p class="legend-summary">700 mil estabelecimentos · Café, Hortaliças, Laticínios</p>
+            <div class="legend-detail">
+              <p>Em MG e SP, cidades de 10 a 50 mil hab. têm no café e hortaliças familiares sua principal fonte de arrecadação.</p>
+              <ul>
+                <li>Café familiar mineiro: 30% da produção nacional</li>
+                <li>Até 40% do emprego ligado ao agro familiar em cidades médias</li>
+              </ul>
+            </div>
+          </div>
+          <div class="map-legend-item active" data-region="sul">
+            <div class="map-legend-header">
+              <span class="legend-dot" style="background:var(--secondary-color)"></span>
+              <strong>Sul <span class="legend-badge">Destaque</span></strong>
+              <i class="fas fa-chevron-down legend-arrow"></i>
+            </div>
+            <p class="legend-summary">850 mil estabelecimentos · Uva, Soja, Suínos, Aves</p>
+            <div class="legend-detail">
+              <p>Região onde a agricultura familiar mais se integra à economia das cidades pequenas. O produtor é o motor local.</p>
+              <ul>
+                <li>1 em cada 3 empregos em pequenas cidades sulistas vem do agro familiar</li>
+                <li>Suinocultura familiar de SC abastece 40 países</li>
+                <li>Sul concentra as maiores cooperativas familiares do país</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUIZ -->
+  <section id="quiz" class="section fade-section">
+    <div class="section-overlay" style="text-align:center">
+      <h2>Quanto você sabe sobre o Agro Familiar?</h2>
+      <p class="lead">Teste seus conhecimentos em 5 perguntas rápidas.</p>
+      <div id="quiz-container">
+        <div id="quiz-question" class="quiz-question-wrapper">
+          <div class="quiz-progress">
+            <span id="quiz-step">1</span>/5
+          </div>
+          <h3 id="quiz-q-text"></h3>
+          <div id="quiz-options" class="quiz-options"></div>
+        </div>
+        <div id="quiz-result" class="quiz-result" style="display:none">
+          <div class="quiz-score-circle">
+            <span id="quiz-score">0</span>/5
+          </div>
+          <h3 id="quiz-result-title"></h3>
+          <p id="quiz-result-desc"></p>
+          <button id="quiz-restart" class="btn">Tentar novamente</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2026 AgroFuturo. Todos os direitos reservados.</p>
+  <p style="margin-top:8px"><a href="https://github.com/enzo-morais" target="_blank" rel="noopener" style="color:var(--primary-color);text-decoration:none;font-weight:600">Criado por Enzo Morais</a></p>
+</footer>
+
+<button id="back-to-top"><i class="fas fa-arrow-up"></i></button>
+
+<!-- Scroll Indicator -->
+<div class="scroll-indicator" id="scroll-indicator"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
