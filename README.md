@@ -38,7 +38,3 @@ O AgroFuturo apresenta dados reais, mapas interativos e conteúdo educativo para
 - EMATER-PR / IDR-Paraná
 - CONAB
 - FAO
-
-## Autor
-
-Criado por [Enzo Morais](https://github.com/enzo-morais)
